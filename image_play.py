@@ -1,4 +1,4 @@
-from email.mime import image
+#from email.mime import image
 from PIL import Image
 
 img = Image.new("RGB",(200,200))
