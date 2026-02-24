@@ -16,10 +16,5 @@ for k in cache:
 
 for l in cache:
     if(l.installed):
-        count = 0
-        v = l.versions[0]
-        ds = v.dependencies
-        for d in ds:
-            count = count + 1
-        if(count == 0):
+        if(not (l.name in dep)):
             print(l.name)
